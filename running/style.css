@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: "Sora Thin";
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/font/Sora-Thin.ttf) format('opentype');
+}
+@font-face {
+    font-family: "Sora Var";
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/font/Sora-VariableFont_wght.ttf) format('opentype');
+}
+
+table{
+    font-family: "Sora Thin", sans-serif ;
+}
+body {
+    background-color: "white";
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 15pt;
+}
+canvas {
+    border: 1px solid #181818;
+}
+#container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 10%;
+    display: inline-block;
+    border: 0px;
+}
+#container > #inform {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left:100%;
+    top:0px;
+}
+#container > .controlls{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right:100%;
+    top:0px;
+}
+
+
+img:hover{
+    background-color:  hsl(0,0%,90%);
+}
+
+
+.controlls >ul> li{
+    margin: 0;
+    padding: 10px;
+    padding-top: 14px;
+    text-align: center;
+    border-radius: 10px;
+}
+.controlls >ul> li:hover{
+    background-color:  hsl(0,0%,90%);
+}
+

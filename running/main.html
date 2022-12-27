@@ -4,78 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Game</title>
-    <script src="sketch/sketch.js"></script>
+    <script src="sketch.js" defer></script>
+    <script src="main.js" defer></script>
     <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
-
     <div id="container">
-        <div id="inform">
-            <table>
-                <tr>
-                    <th>Score:</th>
-                    <th><span id="score">0</span></th>
-                </tr>
-                <tr>
-                    <th>Record:</th>
-                    <th><span id="record">0</span></th>
-                </tr>
-            </table>
-        </div>
-        <div class="controlls">
-            <ul style="list-style-type: none;">
-                <li>
+        <div id="draw">
+            <div id="inform">
+                <table>
+                    <tr>
+                        <th>Score:</th>
+                        <th><span id="score">0</span></th>
+                    </tr>
+                    <tr>
+                        <th>Record:</th>
+                        <th><span id="record">0</span></th>
+                    </tr>
+                </table>
+            </div>
+            <div id="sidebar">
+                <div id="sidebar_content">
+                    Using
+                    <br>
                     <img width="20px" src="assets/mouse_click.svg" alt="CLICK"/>
-                </li>
-                <li>
+                    <br>
                     <img width="60px" src="assets/space_button.svg" alt="SPACE"/>
-                </li>
-                <li>
+                    <br>
                     <img width="30px" src="assets/w_button.svg" alt="W"/>
-                </li>
-                <li>
+                    <br>
                     <img width="20px" src="assets/arrow_up.svg" alt="UP"/>
-                </li>
-            </ul>
-        </div>   
+                </div>
+                <span><span>
+            </div>
+        </div>
     </div>
     
-    
-    
-    
-    
-    <!--  Script the game  -->
-    <script>
-        function random(min, max) {
-            /*This function is to produce a random number.*/
-            return Math.round(min + (Math.random() * (max - min)));
-        }
-
-        function randomChoice(array) {
-            /*This function is to choose a random object in array.*/
-            return array[Math.round(random(0, array.length - 1))];
-        }
-
-        var win = Sketch.create({
-            fullscreen: false,
-            width: 640,//window.innerWidth
-            height: 360,
-            container: document.getElementById('container')
-        });
-        var score = document.getElementById('score');
-        var record = document.getElementById('record');
-    </script>
-    <script src="game/vector.js"></script>
-    <script src="game/player.js"></script>
-    <script src="game/plateform.js"></script>
-    <script src="game/particle.js"></script>
-    <script src="game/main.js"></script>
-
-    
-    
-    
-
 </body>
-
-</html>

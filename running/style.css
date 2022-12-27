@@ -85,4 +85,49 @@ canvas{
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 1000px){
+        canvas{
+                height: 90vh;
+        }
+        #inform{
+                font-size: 20pt;
+        }
+        #sidebar{
+                display:none;
+        }
+}
+#rotate {
+/*         display: none; */
+        font-size: 60pt;
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: rgba(255,255,255,0.9);
+        text-align:center;
+        justify-content: center;
+        display:none;
+}
+/* When the phone is verticle */
+@media only screen and (orientation:portrait) {
+        #rotate{
+                display: flex;
+        }
+}
+path{
+        fill:red;
+}
+
+
+
+
+
+
+
+
+
+
+
 

@@ -19,7 +19,7 @@ Easy Game just for Fun !
 </li>
 <li>
 <h3>link</h3>
-  <img alt="image" src="https://user-images.githubusercontent.com/108061433/209781230-8f72b9cf-d809-49d0-92a0-8e049200d9c0.png">
+  <img width="300px" alt="image" src="https://user-images.githubusercontent.com/108061433/209781230-8f72b9cf-d809-49d0-92a0-8e049200d9c0.png">
 
 or
 
